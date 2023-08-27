@@ -8,7 +8,7 @@ Rest API to generate 500 random float values
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
-- [Test Considerations](#ensuring-functionality:-tests-and-checks)
+- [Tests](#test-cases)
 
 ## Getting Started
 
