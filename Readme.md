@@ -65,7 +65,7 @@ To access protected endpoints, you'll need to generate an authentication token. 
 
 6. Copy the generated token.
 
-    ![Token Generation](path-to-your-image.png)
+    ![Token Generation](./token.png)
 
 
 
