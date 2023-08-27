@@ -47,7 +47,35 @@ To get started with the Random Array Generator project, follow these steps:
 
 6. For Docker-based deployment, refer to Docker Usage.
 
+## Generating an Authentication Token
 
+To access protected endpoints, you'll need to generate an authentication token. You can do this using both the Django admin interface and command-line methods.
+
+### Using Django Admin Interface
+
+1. Start the development server: `python manage.py runserver`
+
+2. Open a web browser and visit: `http://localhost:8000/admin`
+
+3. Log in using the superuser account you created during migration. If you haven't created a superuser account, you can do so using the following command: `python manage.py createsuperuser`
+
+4. Once logged in, navigate to "Tokens" under the "Authentication and Authorization" section.
+
+5. Click "Add Token" to create a new token for your user.
+
+6. Copy the generated token.
+
+    ![Token Generation](path-to-your-image.png)
+
+
+
+### Using Command-Line
+
+1. Open a terminal and navigate to the project directory.
+
+2. Run the following command to generate a token for a specific user. Replace `yourusername` with the actual username: 
+    ```sh 
+    python manage.py drf_create_token yourusername```
 
 ## Usage
 
@@ -69,6 +97,11 @@ Content-Type: application/json
 {
     "sentence": "This is a sample sentence."
 }
+```
+
+#### Example Request 
+```sh
+curl -X POST "http://localhost:8000/random_array/" -H "Authorization: Token YOUR_GENERATED_TOKEN" -H "Content-Type: application/json" -d '{"sentence": "Generate an array for this sentence."}'
 ```
 #### Example Response
 ```json
