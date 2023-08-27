@@ -31,7 +31,7 @@ class RandomArrayView(APIView):
             return Response({"error": "Invalid sentence value"}, status=status.HTTP_400_BAD_REQUEST)
             
         try:
-            random_array = self.generate_random_floats(0, 1, 500)
+            random_array = self.generate_random_floats(500)
         except Exception as e:
             logger.error("An error occurred while generating random array: %s", str(e))
             return Response({"error": "An error occurred"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
@@ -39,5 +39,5 @@ class RandomArrayView(APIView):
         logger.info("Random array generated successfully.")
         return Response(random_array, status=status.HTTP_200_OK)
 
-    def generate_random_floats(self, minimum:int,  maximum:int, lim:int):                  
-        return [random.uniform(minimum, maximum) for _ in range(lim)]
+    def generate_random_floats(self, lim:int):                  
+        return [round(random.random(), 4) for _ in range(lim)]

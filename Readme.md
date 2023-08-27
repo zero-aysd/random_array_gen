@@ -116,3 +116,31 @@ Content-Type: application/json
     0.567
 ]
 ```
+
+
+# Ensuring Functionality: Tests and Checks
+
+To ensure that the Random Array Generator project meets its intended purpose and functions as expected, comprehensive tests and checks are essential. The provided test file, `tests.py`, contains unit tests that verify the functionality of the `RandomArrayView` API endpoint. Let's explore the tests and checks performed:
+
+## Test Cases
+
+The `RandomArrayViewTests` class within the test file contains the following test cases:
+
+### Test Missing Sentence Parameter
+
+This test checks whether the API responds correctly when the `sentence` parameter is missing from the request.
+
+### Test Invalid Sentence Type
+
+This test verifies the API behavior when an invalid data type is provided for the `sentence` parameter.
+
+### Test Server Error
+
+In this test case, a simulated server error is created using a mocked version of the `generate_random_floats` function. It ensures that the API handles server errors gracefully.
+
+## Running Tests
+
+To run the tests included in the test file, execute the following command within the project directory:
+
+```sh
+python manage.py test
