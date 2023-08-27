@@ -30,7 +30,7 @@ To get started with the Random Array Generator project, follow these steps:
     ```
 2. Navigate to the project directory: 
     ```sh
-    cd random-array-generator
+    cd random_array_generator
     ```
 3. Install dependencies: 
     ```sh
@@ -44,5 +44,26 @@ To get started with the Random Array Generator project, follow these steps:
     ```sh
     python manage.py runserver
     ```
-    
+
 6. For Docker-based deployment, refer to Docker Usage.
+
+
+
+## Usage
+
+### `RandomArrayView`
+
+The `RandomArrayView` API endpoint allows you to generate random arrays of floating-point numbers based on a provided sentence.
+
+#### Endpoint
+
+- **URL**: `/random_array/`
+- **Method**: POST
+
+#### Request
+
+```json
+POST /random_array/
+{
+    "sentence": "This is a sample sentence."
+}```
