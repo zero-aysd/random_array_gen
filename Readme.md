@@ -1,6 +1,6 @@
-# Your Project Name
+# Random Array Generator
 
-Brief description or introduction to your project.
+Rest API to generate 500 random float values 
 
 ## Table of Contents
 
@@ -9,8 +9,7 @@ Brief description or introduction to your project.
   - [Installation](#installation)
 - [Usage](#usage)
 - [API Documentation](#api-documentation)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Getting Started
 
@@ -25,9 +24,9 @@ Brief description or introduction to your project.
 
 To get started with the Random Array Generator project, follow these steps:
 
-Clone this repository: git clone https://github.com/yourusername/random-array-generator.git
-Navigate to the project directory: cd random-array-generator
-Install dependencies: pip install -r requirements.txt
-Run migrations: python manage.py migrate
-Start the web application: python manage.py runserver
-For Docker-based deployment, refer to Docker Usage.
+1. Clone this repository: git clone https://github.com/yourusername/random-array-generator.git
+2. Navigate to the project directory: cd random-array-generator
+3. Install dependencies: pip install -r requirements.txt
+4. Run migrations: python manage.py migrate
+5. Start the web application: python manage.py runserver
+6. For Docker-based deployment, refer to Docker Usage.
