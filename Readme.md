@@ -64,6 +64,22 @@ The `RandomArrayView` API endpoint allows you to generate random arrays of float
 
 ```json
 POST /random_array/
+Content-Type: application/json
+
 {
     "sentence": "This is a sample sentence."
-}```
+}
+```
+#### Example Response
+```json
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+[
+    0.456,
+    0.789,
+    0.123,
+    // ... more numbers
+    0.567
+]
+```
