@@ -100,7 +100,7 @@ Content-Type: application/json
 
 #### Example Request 
 ```sh
-curl -X POST "http://localhost:8000/random_array/" -H "Authorization: Token YOUR_GENERATED_TOKEN" -H "Content-Type: application/json" -d '{"sentence": "Generate an array for this sentence."}'
+curl -X POST "http://localhost:8000/random_array/" -H "Authorization: Token YOUR_GENERATED_TOKEN" -H "Content-Type: application/json" -d '{"sentence": "This is a sentence."}'
 ```
 #### Example Response
 ```json
