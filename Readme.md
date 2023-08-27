@@ -75,7 +75,7 @@ To access protected endpoints, you'll need to generate an authentication token. 
 
 2. Run the following command to generate a token for a specific user. Replace `yourusername` with the actual username: 
     ```sh 
-    python manage.py drf_create_token yourusername```
+    python manage.py drf_create_token yourusername
 
 ## Usage
 
